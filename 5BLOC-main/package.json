@@ -1,0 +1,30 @@
+{
+  "name": "creature-nft-dapp",
+  "version": "1.0.0",
+  "description": "DApp de collection de créatures NFT",
+  "type": "module",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "chai": "^4.3.10",
+    "hardhat": "^2.28.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "axios": "^1.13.3",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.16.0",
+    "form-data": "^4.0.5"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
