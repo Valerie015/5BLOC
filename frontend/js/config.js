@@ -1,4 +1,4 @@
-export const contractAddress = "Mettre le contrat";
+export const contractAddress = "Mettre le Contrat déployé à l’adresse quand on fait le script de deploy.cjs";
 
 export const abi = [ 
   "function createCreature(address to, string memory metadataURI, uint8 rarity) public returns (uint256)",
@@ -9,4 +9,5 @@ export const abi = [
 ];
 
 export let provider, signer, contract, userAddress;
+
 
