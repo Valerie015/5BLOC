@@ -6,7 +6,7 @@ async function main() {
   const [user] = await hre.ethers.getSigners();
 
   // Adresse de ton contrat déployé
-  const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+  const contractAddress = "Mettre le Contrat déployé à l’adresse quand on fait le script de deploy.cjs";
 
   // ID du token à afficher
   const tokenId = 3;
@@ -49,3 +49,4 @@ main().catch((error) => {
   console.error(" Erreur lors de la lecture :", error);
   process.exit(1);
 });
+
