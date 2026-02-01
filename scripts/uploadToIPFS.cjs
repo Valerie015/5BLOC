@@ -23,10 +23,10 @@ async function uploadMetadataToIPFS(metadata) {
     });
     
     const ipfsHash = response.data.IpfsHash;
-    console.log(`✅ Métadonnées uploadées sur IPFS : ${ipfsHash}`);
+    console.log(` Métadonnées uploadées sur IPFS : ${ipfsHash}`);
     return `ipfs://${ipfsHash}`;
   } catch (error) {
-    console.error('❌ Erreur upload IPFS:', error.response?.data || error.message);
+    console.error(' Erreur upload IPFS:', error.response?.data || error.message);
     throw error;
   }
 }
@@ -61,7 +61,7 @@ function createCreatureMetadata(name, type, rarity, level, imageURI) {
 
 // Exemple d'utilisation
 async function main() {
-  console.log("🚀 Upload de métadonnées de créatures sur IPFS...\n");
+  console.log(" Upload de métadonnées de créatures sur IPFS...\n");
 
   // Créeation 3 créatures d
   const creatures = [
@@ -106,7 +106,7 @@ async function main() {
     const uri = await uploadMetadataToIPFS(metadata);
     uploadedURIs.push({ name: creature.name, uri });
     
-    console.log(`✅ ${creature.name} → ${uri}\n`);
+    console.log(` ${creature.name} → ${uri}\n`);
     
     // Pause de 1 seconde entre chaque upload (rate limiting)
     await new Promise(resolve => setTimeout(resolve, 1000));

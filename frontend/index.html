@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>CreatureNFT DApp</title>
+  <!-- Ethers.js v5 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <!-- CSS externe -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CreatureNFT</h1>
+
+  <div>
+    <strong>Connecté :</strong> <span id="userAddress">Non connecté</span>
+    <button id="connectBtn">Connecter MetaMask</button>
+  </div>
+
+  <hr>
+
+  <h2>Mint une nouvelle créature</h2>
+  <input type="text" id="mintURI" placeholder="IPFS Metadata URI" size="40">
+  <select id="mintRarity">
+    <option value="0">Common</option>
+    <option value="1">Rare</option>
+    <option value="2">Epic</option>
+    <option value="3">Legendary</option>
+  </select>
+  <button id="mintBtn">Mint</button>
+  <span id="mintStatus"></span>
+
+  <hr>
+
+  <h2>Mes créatures</h2>
+  <div id="creatureList"></div>
+
+  <!-- JS externe en module ES6 -->
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
