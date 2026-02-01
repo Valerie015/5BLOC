@@ -1,4 +1,4 @@
-export const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+export const contractAddress = "Mettre le contrat";
 
 export const abi = [ 
   "function createCreature(address to, string memory metadataURI, uint8 rarity) public returns (uint256)",
@@ -9,3 +9,4 @@ export const abi = [
 ];
 
 export let provider, signer, contract, userAddress;
+
