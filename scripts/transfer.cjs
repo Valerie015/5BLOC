@@ -2,7 +2,7 @@ const hre = require("hardhat");
 
 async function main() {
   const [owner, receiver] = await hre.ethers.getSigners();
-  const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+  const contractAddress = "Mettre le Contrat déployé à l’adresse quand on fait le script de deploy.cjs";
   const CreatureNFT = await hre.ethers.getContractAt("CreatureNFT", contractAddress);
 
   console.log(` Transfert du token #1 de ${owner.address} vers ${receiver.address}`);
@@ -17,5 +17,6 @@ async function main() {
 
   console.log(` Transfert effectué avec succès !`);
 }
+
 
 main().catch(console.error);
