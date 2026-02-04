@@ -16,5 +16,7 @@ npx hardhat run scripts/deploy.cjs --network localhost #on déploie le scripts
 # Prendre le Contrat déployé à l’adresse 
 npx hardhat run scripts/uploadToIPFS.cjs --network localhost #c'est pour avoir des monstres un peu en NFT
 npx hardhat run scripts/mint.cjs --network localhost        
-   
+
+#dans le chemin du dossier du frontend
+npx serve .
 ```
